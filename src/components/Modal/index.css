@@ -19,3 +19,11 @@
 .modal-component .modl h1 {
     margin: 20px;
 }
+
+.modal-component .border-red {
+    border: 3px solid red;
+}
+
+.modal-component .border-blue {
+    border: 3px solid blue;
+}

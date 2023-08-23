@@ -3,15 +3,12 @@ import './index.css'
 import { createPortal } from 'react-dom'
 
 export default function Modal({children, danger = false}) {
+  let className = danger ? "border-red" : "border-blue";
   return (
     createPortal(
       <div className='modal-component'>
         <div className='modal-backdrop'>
-          <div className='modal' style={{
-            borderWidth : "2px",
-            borderStyle : "solid",
-            borderColor : danger ? "red" : "blue"
-          }}>
+          <div className={`modal ${className}`}>
             {children}
           </div>
         </div>
